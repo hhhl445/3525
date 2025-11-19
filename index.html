@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>308宿舍成员介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(90deg, #4a69bd, #6a89cc);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .members-section {
+            padding: 30px;
+        }
+        
+        h2 {
+            color: #4a69bd;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            border-bottom: 2px solid #4a69bd;
+            padding-bottom: 10px;
+        }
+        
+        .members-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .member-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid #4a69bd;
+        }
+        
+        .member-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .member-name {
+            font-size: 1.5rem;
+            color: #4a69bd;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .member-info {
+            color: #555;
+            line-height: 1.7;
+        }
+        
+        .member-info p {
+            margin-bottom: 10px;
+        }
+        
+        .dorm-culture {
+            background: #e3f2fd;
+            padding: 30px;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+        
+        .dorm-culture h3 {
+            color: #1565c0;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .dorm-culture p {
+            color: #37474f;
+            line-height: 1.7;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #4a69bd;
+            color: white;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .members-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>308宿舍</h1>
+            <p class="subtitle">六位青年，一个家园，无限可能</p>
+        </header>
+        
+        <div class="members-section">
+            <h2>宿舍成员介绍</h2>
+            
+            <div class="members-grid">
+                <div class="member-card">
+                    <div class="member-name">赵晨锋</div>
+                    <div class="member-info">
+                        <p>宿舍长，游戏陪玩，擅长打洲和在瓦叫妈妈（还是个爱堵桥的CS）</p>
+                        <p><strong>座右铭：</strong>我的浮木四掉了</p>
+                    </div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">孙俊昊</div>
+                    <div class="member-info">
+                        <p>爱导管子，宿舍中最爱导管子的人一天一发，一天导倒心里就难受（大概率是性压抑了）</p>
+                        <p><strong>座右铭：</strong>爱导管子不是我的错</p>
+                    </div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">白雪峰</div>
+                    <div class="member-info">
+                        <p>宿舍老烟枪沉默寡言，也没啥可介绍的。</p>
+                        <p><strong>座右铭：</strong>我爱抽九美</p>
+                    </div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">黄俊哲</div>
+                    <div class="member-info">
+                        <p>宝商贸黑客，比肩神明的男人。</p>
+                        <p><strong>座右铭：</strong>有我在，不用慌。</p>
+                    </div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">毕嘉豪</div>
+                    <div class="member-info">
+                        <p>全宿舍最帅的男人。，虽然叫嘉豪，但不是嘉豪。</p>
+                        <p><strong>座右铭：</strong>我的颜值你无法媲美</p>
+                    </div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">郭立豪</div>
+                    <div class="member-info">
+                        <p>13是我的代名词，我不是渣，只是想给每个女孩一个家。</p>
+                        <p><strong>座右铭：308无CD战神</strong></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="dorm-culture">
+                <h3>308宿舍文化</h3>
+                <p>308宿舍不仅仅是一个居住空间，真是打游戏，聊骚，开黄腔，乱搞，的兄弟基地，还是我在学校的心灵港湾。</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>308宿舍 © 2025 | 一起导管，一起成长。</p>
+        </footer>
+    </div>
+</body>
+</html>
